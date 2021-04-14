@@ -1,0 +1,22 @@
+ALGORITHM Checkpoint7
+  
+Var 
+       cptlengh, cptwords, cptvowels, i :Integre ;
+       str : string ;
+
+Begin
+      Write (“Enter the String“) ;
+      Read (str) ;
+      cptlengh :=0 ; cptwords :=0 ; cptvowels :=0 ; i :=0 ;
+      while(str[i]<> ‘.’)  do
+
+      if (str[i]<> ‘  ’) then cptlengh := cptlengh+1
+      if (str[i]<> ‘  ’ and (str[i+1]=’  ‘ or str[i+1]=’.’)) then cptwords :=cptwords+1
+      if( str[i]=’A’ or str[i]=’E’ or str[i]=’I’ or str[i]=’U’ or str[i]=’O’ 
+      then  cptvowels :=cptvowels+1
+      i :=i+1
+
+END while
+        
+
+        
